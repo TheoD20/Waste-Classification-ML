@@ -31,7 +31,7 @@ This project is developed as a group, formed by:
 
 The dataset is not stored in this GitHub repository. It should be downloaded locally using the Kaggle API.
 
-Expected local structure:
+## Expected local structure:
 
 ```text
 WasteClassification/
