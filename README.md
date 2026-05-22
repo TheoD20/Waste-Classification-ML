@@ -25,9 +25,9 @@ This project is developed as a group, formed by:
 
 ## Dataset
 
-Dataset: Kaggle Garbage Classification  
-Classes: 12 garbage/waste categories
-Link: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
+- Dataset: Kaggle Garbage Classification  
+- Classes: 12 garbage/waste categories
+- Link: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
 
 The dataset is not stored in this GitHub repository. It should be downloaded locally using the Kaggle API.
 
@@ -45,8 +45,9 @@ WasteClassification/
 ## Setup
 
 Install the required Kaggle API package:
-
+```
 python -m pip install --upgrade kaggle
+```
 
 Download the dataset:
 
@@ -63,9 +64,8 @@ rm data/garbage-classification.zip
 ```
 
 Another option is to manually download the dataset as a zip file from Kaggle:
-```text
 https://www.kaggle.com/datasets/mostafaabla/garbage-classification
-```
+
 If downloading manually, extract the dataset so that the final folder path is:
 ```text
 data/garbage_classification/
