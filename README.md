@@ -29,27 +29,35 @@ This project is developed as a group, formed by:
 - Classes: 12 garbage/waste categories
 - Link: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
 
-The dataset is not stored in this GitHub repository. It should be downloaded locally using the Kaggle API.
+The dataset is not stored in this GitHub repository. It can be downloaded locally using the Kaggle API.
+
+The shared train/validation/test split files will be stored at:
+```text
+data/splits/
+```
 
 ## Expected local structure:
 
 ```text
 WasteClassification/
+├── notebooks (.ipynb)
 ├── data/
-│   └── garbage_classification/
-├── notebooks/
+│   ├── garbage_classification/
+│   └── splits/
 ├── README.md
 └── .gitignore
 ```
 
 ## Setup
 
-Install the required Kaggle API package:
+To download the full raw dataset:
+
+1. Install the required Kaggle API package:
 ```
 python -m pip install --upgrade kaggle
 ```
 
-Download the dataset:
+2. Download the dataset:
 
 ```
 mkdir -p data
