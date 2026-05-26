@@ -114,6 +114,7 @@ def eval_model(
     train_time=None,
     inference_time=None,
     plot_matrix=True,
+    save_path=None,
 ):
     """
     Evaluate model predictions using the shared project metrics.
@@ -224,6 +225,13 @@ def eval_model(
 
             fig.suptitle(f"{model_name}: Normalised Confusion Matrices")
             plt.tight_layout()
+
+            if save_path is not None:
+                save_path = Path(save_path)
+                save_path.parent.mkdir(parents=True, exist_ok=True)
+                fig.savefig(save_path, dpi=150, bbox_inches="tight")
+                print(f"Saved figure to: {save_path}")
+            
             plt.show()
 
         else:
@@ -241,6 +249,13 @@ def eval_model(
 
             ax.set_title(f"{model_name} Test Confusion Matrix")
             plt.tight_layout()
+
+            if save_path is not None:
+                save_path = Path(save_path)
+                save_path.parent.mkdir(parents=True, exist_ok=True)
+                fig.savefig(save_path, dpi=150, bbox_inches="tight")
+                print(f"Saved figure to: {save_path}")
+            
             plt.show()
 
     return {
@@ -272,14 +287,24 @@ def save_metrics(metrics, output_path):
     print(f"Saved metrics to: {output_path}")
 
 
-def plot_training_history(history, title="Training History"):
+def plot_training_history(history, title="Training History", save_dir=None):
     """
     Plot training and validation accuracy/loss for Keras models.
+
+    If save_dir is provided, two figures are saved:
+    - training_accuracy.png
+    - training_loss.png
     """
     history_dict = history.history
 
+    save_dir = Path(save_dir) if save_dir is not None else None
+
+    if save_dir is not None:
+        save_dir.mkdir(parents=True, exist_ok=True)
+
     if "accuracy" in history_dict:
-        plt.figure(figsize=(8, 5))
+        fig = plt.figure(figsize=(8, 5))
+
         plt.plot(history_dict["accuracy"], label="training accuracy")
 
         if "val_accuracy" in history_dict:
@@ -290,10 +315,17 @@ def plot_training_history(history, title="Training History"):
         plt.title(f"{title}: Accuracy")
         plt.legend()
         plt.tight_layout()
+
+        if save_dir is not None:
+            save_path = save_dir / "training_accuracy.png"
+            fig.savefig(save_path, dpi=150, bbox_inches="tight")
+            print(f"Saved figure to: {save_path}")
+
         plt.show()
 
     if "loss" in history_dict:
-        plt.figure(figsize=(8, 5))
+        fig = plt.figure(figsize=(8, 5))
+
         plt.plot(history_dict["loss"], label="training loss")
 
         if "val_loss" in history_dict:
@@ -304,6 +336,12 @@ def plot_training_history(history, title="Training History"):
         plt.title(f"{title}: Loss")
         plt.legend()
         plt.tight_layout()
+
+        if save_dir is not None:
+            save_path = save_dir / "training_loss.png"
+            fig.savefig(save_path, dpi=150, bbox_inches="tight")
+            print(f"Saved figure to: {save_path}")
+
         plt.show()
 
 

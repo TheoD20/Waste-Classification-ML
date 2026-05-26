@@ -9,6 +9,6 @@
     "test_weighted_precision": 0.5589568742813432,
     "test_weighted_recall": 0.5433848797250859,
     "test_weighted_f1": 0.528656821578784,
-    "train_time": 6.191567067988217,
-    "inference_time": 0.024273402988910675
+    "train_time": 6.169024785980582,
+    "inference_time": 0.02437993697822094
 }
