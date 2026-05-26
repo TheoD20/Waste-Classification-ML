@@ -1,0 +1,14 @@
+{
+    "model_name": "RF 3: Moderate depth=8 n=100",
+    "train_accuracy": 0.7553181692605212,
+    "train_macro_f1": 0.7449856183034439,
+    "test_accuracy": 0.5433848797250859,
+    "test_macro_precision": 0.44515745158469516,
+    "test_macro_recall": 0.4237183180757069,
+    "test_macro_f1": 0.4059861369817001,
+    "test_weighted_precision": 0.5589568742813432,
+    "test_weighted_recall": 0.5433848797250859,
+    "test_weighted_f1": 0.528656821578784,
+    "train_time": 6.242010843008757,
+    "inference_time": 0.024173147976398468
+}
