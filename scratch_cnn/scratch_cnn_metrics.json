@@ -1,0 +1,14 @@
+{
+    "model_name": "Scratch CNN",
+    "train_accuracy": 0.8644442398010866,
+    "train_macro_f1": 0.8457477146184714,
+    "test_accuracy": 0.7856529209621993,
+    "test_macro_precision": 0.7428079867486401,
+    "test_macro_recall": 0.7558857939810317,
+    "test_macro_f1": 0.7457692443076982,
+    "test_weighted_precision": 0.7931494807561875,
+    "test_weighted_recall": 0.7856529209621993,
+    "test_weighted_f1": 0.786780976578984,
+    "train_time": 315.3880367600359,
+    "inference_time": 4.141338963992894
+}
