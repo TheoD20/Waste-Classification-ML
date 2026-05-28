@@ -10,10 +10,10 @@ The objective is to classify waste images into their correct material/category c
 
 Model approaches include:
 
-- Method 1
-- Method 2
-- Method 3
-- Method 4
+- HOG + Random Forest
+- LDA/PCA + SVM
+- From Scratch CNN (VGG style)
+- MobileNet Transformer
 
 ## Group Members
 
