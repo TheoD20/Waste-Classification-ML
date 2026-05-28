@@ -1,14 +1,14 @@
 {
     "model_name": "MobileNetV3 Transfer Learning",
-    "train_accuracy": 0.9789115019799245,
-    "train_macro_f1": 0.9732750394179313,
-    "test_accuracy": 0.9548969072164949,
-    "test_macro_precision": 0.9393641837903147,
-    "test_macro_recall": 0.9386632513210081,
-    "test_macro_f1": 0.938546809327988,
-    "test_weighted_precision": 0.9559755547721365,
-    "test_weighted_recall": 0.9548969072164949,
-    "test_weighted_f1": 0.9551493924210621,
-    "train_time": 404.3416267619468,
-    "inference_time": 13.019605183042586
+    "train_accuracy": 0.9637167326641496,
+    "train_macro_f1": 0.9498145918297828,
+    "test_accuracy": 0.9420103092783505,
+    "test_macro_precision": 0.921219382201958,
+    "test_macro_recall": 0.9162614420912095,
+    "test_macro_f1": 0.9181072280632966,
+    "test_weighted_precision": 0.9430004302099144,
+    "test_weighted_recall": 0.9420103092783505,
+    "test_weighted_f1": 0.9421280504217715,
+    "train_time": 225.63359507988207,
+    "inference_time": 12.993469781940803
 }
