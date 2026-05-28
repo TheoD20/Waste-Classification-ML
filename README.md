@@ -13,7 +13,7 @@ Model approaches include:
 - HOG + Random Forest
 - LDA/PCA + SVM
 - From Scratch CNN (VGG style)
-- MobileNet Transformer
+- MobileNet Transfer Learning
 
 ## Group Members
 
@@ -36,14 +36,44 @@ The shared train/validation/test split files will be stored at:
 data/splits/
 ```
 
+## Report
+The final project report will be added once the analysis and write-up are complete. The report will summarise the dataset, preprocessing, model approaches, evaluation protocol, results, computational cost, and key findings from the comparison between traditional machine learning and deep learning methods.
+
 ## Expected local structure:
 
 ```text
 WasteClassification/
-├── notebooks (.ipynb)
+├── random_forest/
+│   ├── figures/
+│   ├── random_forest_model.ipynb        (main rf model training)
+|   ├── random_forest_metrics.json         - results
+│   └── random_forest_prediction.csv
+├── pca_lda/
+│   ├── figures/
+│   ├── pca_lda_model.ipynb              (main svg model training)
+|   ├── pca_lda_metrics.json               - results
+│   └── pca_lda_prediction.csv
+├── scratch_cnn/
+│   ├── figures/
+│   ├── scratch_cnn_model.ipynb          (main scratch cnn model training)
+|   ├── scratch_cnn_metrics.json           - results
+│   └── scratch_cnn_prediction.csv
+├── mobilenet_v3/
+│   ├── figures/
+│   ├── mobilenet_v3_model.ipynb         (main tranfer training model training)
+|   ├── mobilenet_v3_metrics.json          - results
+│   └── mobilenet_v3_prediction.csvs
+|
+├── data_audit_and_split.ipynb           (inspect data and split - train/test/val)
+├── final_comparison.ipynb               (compare and analyse final models)
+├── final_evaliuation/                   (folder with final evaluation results and figures)
+|
 ├── data/
 │   ├── garbage_classification/
 │   └── splits/
+|
+├── shared_utils.py                      (shared functions: load_data(), eval_model(), etc)
+├── LICENSE
 ├── README.md
 └── .gitignore
 ```
