@@ -1,0 +1,14 @@
+{
+    "model_name": "PCA + LDA + SVM",
+    "train_accuracy": 0.7157196795285017,
+    "train_macro_f1": 0.6511210526881722,
+    "test_accuracy": 0.5506872852233677,
+    "test_macro_precision": 0.425207410770064,
+    "test_macro_recall": 0.44183211717476834,
+    "test_macro_f1": 0.43033500248716194,
+    "test_weighted_precision": 0.5852207373755696,
+    "test_weighted_recall": 0.5506872852233677,
+    "test_weighted_f1": 0.5641339341798233,
+    "train_time": 48.63257884979248,
+    "inference_time": 1.0829904079437256
+}
