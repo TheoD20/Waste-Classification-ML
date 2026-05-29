@@ -1,14 +1,14 @@
 {
     "model_name": "Scratch CNN",
-    "train_accuracy": 0.834883506768579,
-    "train_macro_f1": 0.8066379815469458,
-    "test_accuracy": 0.7418384879725086,
-    "test_macro_precision": 0.692998048517148,
-    "test_macro_recall": 0.7061398426761673,
-    "test_macro_f1": 0.6920406783335515,
-    "test_weighted_precision": 0.7586214703478701,
-    "test_weighted_recall": 0.7418384879725086,
-    "test_weighted_f1": 0.7439423011209528,
-    "train_time": 742.2306803059764,
-    "inference_time": 8.586466284003109
+    "train_accuracy": 0.8975964637627775,
+    "train_macro_f1": 0.8850142599456167,
+    "test_accuracy": 0.7903780068728522,
+    "test_macro_precision": 0.7438410158550437,
+    "test_macro_recall": 0.7561304314924125,
+    "test_macro_f1": 0.7472292283903771,
+    "test_weighted_precision": 0.8005299591478146,
+    "test_weighted_recall": 0.7903780068728522,
+    "test_weighted_f1": 0.7929448844194507,
+    "train_time": 353.90710032591596,
+    "inference_time": 4.30041872500442
 }
